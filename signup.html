@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- logo of social media -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- index css  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- sign up page css  -->
+    <style>
+
+        .html_form{
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            
+        }
+
+        .html_form form{
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 1px 1px 16px black;
+            border-radius: 20px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .html_form form h2{
+            color: blue;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .html_form form input{
+            width: 80%;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border-left: 4px solid orange;
+        }
+
+        .html_form form input:focus{
+            border-left: 5px solid blue;
+            border-right: 5px solid blue;
+            box-shadow: 1px 1px 8px black;
+            
+
+
+
+        }
+        .html_form form #checkbox{
+            width: fit-content;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .html_form form button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 8px black;
+            background-color: rgb(255, 174, 0);
+            color: blue;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+        .html_form form button:hover{
+            background-color: rgba(255, 166, 0, 0.692);
+            color: rgb(12, 12, 66);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar nav_top">
+        <div class="logo">
+            <a href="#"> <img src="img/logo.png"> </a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About US</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact US</a>
+            <a href="login.html">login/Register</a>
+        </div>
+    </nav>
+
+    <div class="html_form">
+        <form action="" onsubmit="return validation()" name="submit_googlesheet" method="post">
+            <h2>Register</h2>
+            <!-- <label for="">Full Name</label> -->
+            <input type="username" id="username" name="Name" placeholder="Userame" ><br>
+            <span id="errorname" style="color: red;"></span>
+            <input type="email" id="email" name="Email Id" placeholder="Email ID" ><br>
+            <span id="erroremail" style="color: red;"></span>
+            <input type="number" id="number" name="Number" placeholder="Contact Number" ><br>
+            <span id="errornumber" style="color: red;"></span>
+            <input type="password" id="password" name="password" placeholder="password" ><br>
+            <span id="errornumber" style="color: red;"></span>
+
+            <input type="checkbox" id="checkbox" required>agree with <a href="">Terms & conditions</a>and <a href="#">Privacy Policy</a><br>
+            
+            <button type="submit">Register</button>
+            <button type="reset">Refresh</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <a href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="login.html">Login</a>|
+            <a href="signup.html">sign up</a>
+        </div>
+
+        <div class=doc>
+            <h3>Documents</h3>
+            <a href=" ">Privacy Policy</a>|
+            <a href=" ">Terms of use</a>|
+            <a href=" ">Refund Policy</a>
+        </div>
+
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href=" https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/ " target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>|
+            <a href=" https://www.instagram.com/1stop " target="_blank"> <i class="fa-brands fa-instagram"></i></a>|
+            <a href=" https://www.linkedin.com/company/1stop-ai " target="_blank"> <i class="fa-brands fa-linkedin"></i></a>|
+            <a href=" https://twitter.com/onestopai " target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href=" https://api.WhatsApp.com/send?phone= +911234567890 " target="_blank"><i class="fa-solid fa-envelope"></i></a>|
+            <a href=" tel: +911234567890 " target="_blank"><i class="fa-solid fa-phone"></i></i></a>|
+            <a href=" mailto: something@gmail.co.in " target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy;2021 Leprage. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript">
+        function validation(){
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
+            var password = document.getElementById('password').value;
+
+            var usercheck = /^[A-Za-z]{3,35}$/;
+            var emailcheck = /^[A-Za-z_0-9.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+            var numbercheck =/^[6789][0-9]{9}$/;
+            var passcheck = /^[A-Za-z0-9!@#$%&*]&/;
+
+            if(usercheck.test(username)){
+                document.getElementById('errorname').innerHTML = " ";
+            }
+            else{
+                document.getElementById('errorname').innerHTML = "Invalid Name";
+                return false;
+            }
+
+            if(emailcheck.test(email)){
+                document.getElementById('erroremail').innerHTML = " ";
+            }
+            else{
+                document.getElementById('erroremail').innerHTML = "Invalid Email";
+                return false;
+            }
+
+            if(numbercheck.test(number)){
+                document.getElementById('errornumber').innerHTML = " ";
+            }
+            else{
+                document.getElementById('errornumber').innerHTML = "Invalid Number";
+                return false;
+            }
+
+            if(passcheck.test(password)){
+                document.getElementById('errorpassword').innerHTML = " ";
+            }
+            else{
+                document.getElementById('errorpassword').innerHTML = "Invalid password";
+                return false;
+            }
+  
+        }
+    </script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyTdVhJGhe8X2E1IcqVXDaaeSk5KlgHZ_T288RAQIuqop9GO1PxT2TExjgTXlbXZjlj/exec'
+        const form = document.forms['submit_googlesheet']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks !!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+     </script>
+</body>
+</html>

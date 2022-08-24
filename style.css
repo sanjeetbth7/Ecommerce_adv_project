@@ -1,0 +1,631 @@
+body{
+   padding-top: 65px; 
+}
+.navbar{
+    background-color: white;
+    z-index: 9;
+    padding: 0px 50px;
+    text-decoration: none;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_top{
+    position: fixed ;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 55%;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+}
+
+.nav_side{
+    float: right;
+    width: 45%;
+    margin-top: 20px;
+    
+}
+
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.nav_side a:hover{
+    color: orange;
+    transition: all 0.5s ease;
+}
+
+.main{
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.main .main_content{
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.main .main_content h2{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    /* line-height: 25px; */
+}
+
+.main .main_content .span{
+    text-align: center;
+    width: 100%;
+    padding: 3%;
+    font-size: 18px;
+    color: orange;
+    opacity: 0.9;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.main .btn{
+    margin: 5%;
+    padding: 10px;
+
+}
+
+.main .btn a{ 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(16, 16, 96);
+    font-family: sans-serif;
+    
+}
+
+.main .main_content .btn a:hover{
+    background-color: black;
+    padding: 8px;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: all 0.5s ease;
+}
+
+.product h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product .product_container{
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    padding-bottom: 10px;
+    
+}
+
+.product .product_container .item{
+    margin: 5px;
+    padding: 5px;
+    width: 33.33%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    
+    /* display: inline-block; */
+    
+}
+
+.product .product_container .item:hover{
+    background-color: #f7ebeb;
+
+}
+
+.product .product_container .item .item_img{
+    width: 100%;
+}
+
+.product .product_container .item .item_img img{
+    width: 100%;
+    /* height: 240px; */
+}
+
+.product .product_container .item .item_content{
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.product .product_container .item button{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    margin: 0%;
+    padding: 0px;
+    
+}
+
+.product .product_container .item button a{
+
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(16, 16, 96);
+    font-family: sans-serif;
+}
+
+.product .product_container .item button a:hover{
+    background-color: black;
+    padding: 8px;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+}
+
+.product .product_btn{
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.product .product_btn a{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(18, 95, 82);
+    font-family: sans-serif;
+}
+
+.product .product_btn a:hover{
+    background-color: black;
+    padding: 8px;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+}
+
+.keypoint{
+    background-color: rgb(232 224 224 / 45%);
+    
+}
+
+.keypoint h2 {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.keypoint .key_container{
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+}
+
+.keypoint .key_container .key_img{
+    width: 50%;
+}
+
+.keypoint .key_container .key_img img{
+    width: 100%;
+}
+
+.keypoint .key_container .key_content{
+    width: 50%;
+}
+
+.keypoint .key_container .key_content li{
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    background-color: white;
+    border-left: 4px solid orange;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+    
+}
+
+.testimonial{
+    padding: 20px;
+}
+
+.testimonial h2{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.testimonial .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.testimonial .testi_container .item{
+    width: 94%;
+    margin: 3%;
+}
+
+.testimonial .testi_container .item .item_img{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+    /* border-radius: 50%; */
+}
+.testimonial .testi_container .item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.testimonial .testi_container .item .item_content{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.testimonial .testi_container .item .item_content h3{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.team{
+    padding: 3%;
+    background-color: rgb(232 224 224 / 45%);
+}
+
+.team h2{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.team .team_container{
+    display: flex;
+
+}
+
+.team .team_container .team_video{
+    width: 50%;
+    padding: 1%;
+    margin: 3%;
+}
+
+.team .team_container .team_video video {
+    width: 100%;
+}
+
+.team .team_container .team_content{
+    width: 50%;
+    padding: 1%;
+    margin: 3%;
+    color: black;
+    border-radius: 10px;
+    /* border: 2px solid #23486e91; */
+    background-color: white;
+
+}
+
+.team .team_container .team_content p{
+    font-family: sans-serif;
+    font-size: 18px;
+    
+}
+
+.feedback{
+    background-image: url('img/bg2.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.feedback h3{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.feedback form {
+    text-align: center;
+    
+}
+
+.feedback form input{
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.feedback form input:hover{
+    border-left: 5px solid orange ;
+}
+
+.feedback form textarea {
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.feedback form textarea:hover{
+    border-left: 2px solid orange ;
+}
+
+.feedback form button{
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+
+.feedback form button:hover{
+    background-color: black;
+    padding: 8px;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+}
+
+.about_us{
+    padding: 25px 50px;
+}
+
+.about_us h3{
+    color: rgb(226, 151, 13);
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.about_us p{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.contact_container{
+    display: flex;
+}
+.contact_container .contact_content{
+    width: 35%;
+    padding: 3% 6%;
+}
+
+.contact_container .contact_content h3{
+    color: rgb(226, 151, 13);
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.contact_container .contact_content p{
+    font-size: 17px;
+}
+
+.contact_container .g_map{
+    width: 65%;
+    padding: 3% 6%;
+}
+
+.blog_container{
+    padding: 5%;
+    margin: 10px;
+}
+
+.blog_container h2{
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(22, 22, 160);
+}
+
+.blog_container .blog_img{
+    width: 30%;
+    float: right;
+}
+
+.blog_container .blog_img img{
+    width: 100%;
+}
+
+.blog_container .blog_content{
+    width: 65%;
+    padding: 5px 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+
+}
+
+
+footer{
+    background-color: #91d0d79e;
+    padding: 50px 30px 30px 10px;
+}
+
+footer .logo{
+    width: 100%;
+}
+
+footer .pages{
+    text-align: center;
+}
+
+footer .pages h3{
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(25, 11, 100);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+footer .pages a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer .doc{
+    text-align: center;
+}
+
+footer .doc h3{
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(25, 11, 100);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+footer .doc a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer .social{
+    text-align: center;
+}
+
+footer .social h3{
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+footer .social a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(25, 11, 100);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+footer .social a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+footer .contact{
+    text-align: center;
+}
+
+footer .contact h3{
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+footer .contact a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(25, 11, 100);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+footer .contact a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer i{
+    color: blue;
+}
+
+footer i:hover{
+    color: rgba(13, 13, 121, 0.802);
+}
